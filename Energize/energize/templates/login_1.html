@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnerGize - Login</title>
+
+    <link rel="stylesheet" href="{% static 'CSS/padrao.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/inicio.css' %}">
+</head>
+<body>
+    <div class="abertura">
+        <div class="btn_voltar">
+            <a href="javascript:void(0);" onclick="voltarPagina()">
+                <img src="{% static 'images/icons/icon_back(carrossel)' %}" alt="">
+            </a>
+        </div>
+
+        <div class="login">
+            <div class="inf">
+                <h2>Acesse</h2>
+                <p>Com e-mail e senha para continuar</p>
+            </div>
+            
+            <form id="form_login">
+                <label for="email_login">E-mail</label>
+                <input type="email" name="email_login" id="email_login" placeholder="Digite seu e-mail">
+                <br>
+                <label for="senha_login">Senha</label>
+                <input type="password" name="senha_login" id="senha_login" placeholder="Digite sua senha">
+                <br>
+                <div class="lembrar_senha">
+                    <div class="remember">
+                        <input type="checkbox" name="lembrar" id="lembrar">
+                        <p>Lembrar minha senha</p>
+                    </div>
+                    <p class="forget">Esqueci minha senha</p>
+                </div>
+            </form>
+            <div class="btns">
+                <button id="acessar">Acessar</button>
+                <button id="cadastro">
+                    <a href="cadastro">Cadastro</a>
+                </button>
+            </div>
+        </div>
+        <a class="exemplo" href="inicio">Início</a>
+    </div>
+    <script src="{% static 'js/Login_Cadastro.js' %}"></script>
+</body>
+</html>

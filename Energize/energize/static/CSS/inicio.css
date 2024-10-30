@@ -1,0 +1,320 @@
+/* <div class="abertura">
+        <h1>Ener <img src="/img/icons/icon_logo.png" alt="logo"> Gize</h1>
+</div> */
+
+.abertura{
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+        
+        background: linear-gradient(#1DD3B0, #B2FF9E);
+        border-radius: 25px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .exemplo{
+                position: absolute;
+                top: 0;
+        }
+        
+
+}
+
+
+/* Início */
+
+.btn_voltar{
+        
+        img{
+                width: 30px;
+                height: 30px;
+
+                position: absolute;
+                top: 25px;
+                left: 25px;
+        }
+        
+        cursor: pointer;
+}
+
+.conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+        
+        /* imagens */
+        .img_1{
+                width: 58%;
+                margin-bottom: 10px;
+                margin-left: 15px;
+        }
+        .img_2{
+                width: 70%;
+                margin-bottom: 20px;
+        }
+        .img_3{
+                width: 95%;
+                margin-bottom: 10px;
+        }
+        .img_4{
+                width: 43%;
+                margin-left: 25px;
+        }
+
+        .texto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                border-radius: 25px;
+                background-color: #fff;
+                
+                .nav_story{
+                        display: flex;
+                        flex-wrap: wrap;
+                       
+                        
+                        .story{
+                                width: 40px;
+                                height: 2px;
+                                background-color: aliceblue;
+                                border: 1px solid green;
+                                border-radius: 5px;
+                                margin: 0 3px;
+                                margin-top: 25px;
+                        }
+
+                        .active{
+                                background-color:#B2FF9E;
+                        }
+                }
+
+                h2{
+                        font-size: 30px;
+                        color:#1DD3B0;
+                }
+
+                p{
+                        text-align: center;
+                        margin: 0 20px;
+                        font-size: 20px;
+                }
+                
+                button{
+                        background: none;
+                        border: none;
+                        margin-top: 25px;
+
+                        img{
+                                width: 40px;
+                                padding: 10px;
+                                
+                                border-radius: 50%;
+                                border: 1px solid #B2FF9E;
+                                background-color:#B2FF9E;
+                                color: #fff;
+                        }
+                        img:hover{
+                                background-color: #fff;
+                        }
+                }
+                
+
+                a{
+                        margin-bottom: 25px;
+                        text-decoration: none;
+                        color: gray;
+                }
+
+                a:hover{
+                        color:#1DD3B0
+                }
+               
+        }
+}
+
+.inicio_login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+                margin-bottom: 150px;
+                width: 100%;
+        }
+
+        h2{
+                font-size: 40px;
+        }
+
+        button{
+                margin-top: 50px;
+                background: none;
+                border: 1px solid #fff;
+                border-radius: 5px;
+
+                width: 250px;
+                height: 50px;
+
+                justify-content: center;
+                
+                background-color: #fff;
+                font-size: 20px;
+                color:#1DD3B0
+        }
+
+        button:hover{
+                background-color: #1DD3B0;
+                color: #fff;
+                border: 1px solid #1DD3B0;
+        }
+}
+
+/* Login */
+.login{
+        .inf{
+                position: absolute;
+                top: 60px;
+                left: 30px;
+                color:rgb(2, 97, 97);
+
+                h2{
+                        font-size: 40px;
+                        margin-bottom: 0px;
+                }
+        
+                p{
+                        margin-top: 0px;
+                        font-size: 20px;
+                }
+        }
+
+        form{
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+
+                input{
+                        width: 350px;
+                        height: 60px;
+
+                        border-radius: 10px;
+                        border: none;
+
+                        margin-top: 5px;
+                        
+                }
+
+                label{
+                        margin-left: 8px;
+                        margin-top: 20px;
+
+                        color: rgb(2, 97, 97);
+                }
+
+                
+        }
+
+        .lembrar_senha{
+
+                justify-content: space-between;
+
+                .remember{
+                        display: flex;
+                        justify-content: space-around;
+
+                       align-items: center;
+                       p{
+                        margin-bottom: 5px;
+                       }
+
+                        #lembrar{
+                                width: 20px;
+                        }
+                }
+
+                .forget{
+                        margin-top: 30px;
+                }
+                
+                display: flex;
+                justify-content: space-around;
+                
+                font-size: 13px;
+
+                
+        }
+        
+        .btns{
+                display: flex;
+                flex-direction: row;
+                /* flex-wrap: wrap; */
+
+
+                button{
+                        margin-top: 50px;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        background: none;
+                        
+                        border-radius: 5px;
+        
+                        width: 150px;
+                        height: 50px;
+        
+                        justify-content: center;
+                        
+                        
+                        font-size: 20px;
+                        
+
+                                            
+                }
+
+
+                #cadastro{
+                       background-color: #fff;
+                        border: 1px solid #fff;
+
+                        a{
+                                text-decoration: none;
+                                color: #1DD3B0;
+                        }  
+                }
+                #cadastro:hover{
+                        background-color: #1DD3B0;
+                        border: 1px solid #1DD3B0;
+
+                        a{
+                                color: #fff;
+                        }  
+                }
+
+                #acessar{
+                        background-color: #1DD3B0;
+                        border: 1px solid #1DD3B0;
+                        a{
+                                text-decoration: none;
+                                color: #fff;
+                        }  
+                }
+                #acessar:hover{
+                        background-color: #fff;
+                        border: 1px solid #fff;
+
+                        a{
+                                text-decoration: none;
+                                color: #1DD3B0;
+                        }  
+                }
+        }
+        
+}

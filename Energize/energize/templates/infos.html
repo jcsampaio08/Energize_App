@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnerGize</title>
+
+    <link rel="stylesheet" href="{% static 'CSS/padrao.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/inicio.css' %}">
+
+</head>
+<body>
+    <div class="abertura">
+        <div class="btn_voltar">
+            <a href="javascript:void(0);" onclick="voltarPagina()">
+                <img src="{% static 'images/icons/icon_back(carrossel).png' %}" alt="">
+            </a>
+        </div>
+        
+    
+        <a class="exemplo" href="index">FEED</a>    
+
+        <div class="conteudo">
+            <img id="img_desc" class="img_1" src="{% static 'images/inicio/menino.png' %}" alt="">
+
+            <div class="texto">
+                <div class="nav_story">
+                    <div class="story active"></div>
+                    <div class="story"></div>
+                    <div class="story"></div>
+                    <div class="story"></div>
+                </div>
+
+                <h2 id="titulo">Viva Bem</h2>
+
+                <p id="descricao">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dicta saepe inventore quae nihil. Pariatur dolor dolore 
+                    omnis non ex ad odit aut earum vel nulla itaque exercitationem, 
+                    error fuga. Ipsa.
+                </p>
+
+                <button onclick="proximaPag()">
+                    <img src="{% static 'images/icons/icon_arrow_forward.png' %}" alt="">
+                </button>
+
+                <a id="pular" href="javascript:void(0)" onclick="pular()">Pular</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/inicio.js' %}"></script>
+</body>
+</html>

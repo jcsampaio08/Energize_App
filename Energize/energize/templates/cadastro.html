@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnerGize - Cadastro</title>
+
+    <link rel="stylesheet" href="{% static 'CSS/padrao.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/inicio.css' %}">
+</head>
+<body>
+    <div class="abertura">
+        <div class="btn_voltar">
+            <a href="javascript:void(0);" onclick="voltarPagina()">
+                <img src="{% static 'images/icons/icon_back(carrossel).png' %}" alt="">
+            </a>
+        </div>
+
+        <div class="login">
+            <div class="inf">
+                <h2>Cadastre-se</h2>
+                <p>Informe o seu e-mail e crie uma senha</p>
+            </div>
+
+            <form id="form_cadastro">
+                <label for="email_cadastro">E-mail</label>
+                <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Digite seu e-mail">
+                <br>
+                <label for="senha_cadastro">Senha</label>
+                <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Digite sua senha">
+                <br>
+                <label for="Confirmasenha">Repita sua senha</label>
+                <input type="password" name="Confirmasenha" id="Confirmasenha" placeholder="Repita sua senha">
+            </form>
+            <div class="btns">
+                <button id="acessar">Cadastrar</button>
+            </div>
+        </div>
+        <a class="exemplo" href="inicio">Início</a> <!-- inicio -->
+    </div>
+    <script src="{% static 'js/Login_Cadastro.js' %}"></script>
+</body>
+</html>

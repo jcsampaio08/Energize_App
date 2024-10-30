@@ -1,0 +1,227 @@
+
+#content{
+    /*dimensões: iphone XR*/
+    /* width: 414px;
+    height: 896px; */
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    background: linear-gradient(#1DD3B0, #B2FF9E);
+    border-radius: 25px;
+
+
+    #main{
+
+        position: relative;
+
+        .destaque{
+
+            padding:10px 0px;
+            .dest{
+                img{
+                    width: 300px;
+                    height: 150px;
+                }
+
+                padding: 10px;
+                border: 1px solid #e1e1e1;
+                margin: 0 25px 0px 25px; /*margin: top, right, bottom, left*/
+            }
+
+            /* coloca os itens em carrossel */
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .features{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            margin: 30px 0px;
+
+            img{
+                width: 50px;
+                height: 50px;
+
+                border: 2px solid black;
+                border-radius: 50%;
+
+                padding: 15px;
+            }
+
+            img:hover{
+                background-color: #B2FF9E;
+            }
+
+            p{
+                margin-left: 20px;
+            }
+        }
+
+        .forYou{
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            margin-left: 20px;
+
+            .perfis{
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                width: 200px;
+                height: 180px;
+
+                border: 2px solid black;
+                border-radius: 10px;
+
+                margin: 20px 10px;
+                padding: 0;
+
+
+                img{
+                    width: 80px;
+                    height: 80px;
+
+                    margin-top: 0px;
+                    margin-bottom: -5px;
+                }
+
+                .fechar{
+                    width: 20px;
+                    height: 20px;
+
+                    margin-left: 100px; /* define o tamanho da caixinha */
+                    margin-bottom: 0px;
+                }
+
+                button{
+                    background-color: #B2FF9E;
+                    border-radius: 10px;
+                    width: 80px;
+                    height: 25px;
+                }
+
+                button:hover{
+                    background-color: #1DD3B0;
+                }
+                
+
+            }
+
+            /* coloca os itens em carrossel */
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+
+        .publicacoes{
+
+            margin: 50px 0;
+
+            .post{
+                margin-bottom: 50px;
+                width: 100%;
+
+            
+                /* border-bottom: 1px solid lightgray; */
+                border-bottom: 1px solid gray;
+
+                
+                .post-info{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding-bottom: 10px;
+
+                    p{
+                        font-size: 1rem;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                }
+                
+                .foto-perfil{ /* alterar para a imagem na foto de perfil*/
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover; /*mantém a proporção da img boa*/
+                
+                    border: 1.5px solid black;
+                    padding: 5px;
+                    margin-left: 15px;
+                }
+                
+                
+                
+                .img-post{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    border: 1.5px solid black;
+                }
+    
+            
+                .icone-post{
+                    margin-top: 10px;
+                    margin-left: 5px;
+
+                    .icons{
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .icons:hover{
+                        opacity: 0.5;
+                        cursor: pointer;
+                    }
+                }
+                
+                .captions-post{
+                    margin-left: 10px;
+                    font-size: 1rem;
+                }
+            }
+            
+            
+            
+        }
+    }
+
+    
+}
+
+
+
+/* EDITANDO O SCROOLBAR */
+#content::-webkit-scrollbar{
+    width: 0px;
+}
+
+.destaque::-webkit-scrollbar{
+    height: 2px;
+}
+
+.destaque::-webkit-scrollbar-thumb{
+    background: #18b091;
+}
+
+.forYou::-webkit-scrollbar{
+    height: 2px;
+}
+
+.forYou::-webkit-scrollbar-thumb{
+    background: #18b091;
+}
+
+
+/* ARRUMAR O DIMENSIONAMENTO DA TELA
+PARA SER ESPECIFICAMENTE PARA MOBILE */

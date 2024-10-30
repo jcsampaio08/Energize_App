@@ -1,0 +1,254 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 2024.1</title>
+
+    <link rel="stylesheet" href="{% static 'CSS/padrao.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/inicio.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/feed.css' %}">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a href="inicio">INICIO</a>
+            <h1>EnerGize</h1>
+            <!-- <img src="{% static 'images/icons/logo_solo_energize.png' %}" alt=""> -->
+            <div>
+                
+                <!-- icones -> votificação e configuração -->
+             <a href=""> <img src="{% static 'images/icons/icon_notification.png' %}" alt=""> </a> 
+             <a href=""> <img src="{% static 'images/icons/icon_config.png' %}" alt=""> </a>
+
+            </div>
+            
+        </header>
+        
+        <section id="main">
+
+            <h3>Destaques</h3>
+            <div class="destaque">
+                <!-- carrossel -->
+                <div class="dest"><img src="{% static 'images/estadio.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/torcida_brasil.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/estadio.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/torcida_brasil.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/estadio.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/torcida_brasil.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/estadio.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/torcida_brasil.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/estadio.jpg' %}" alt=""></div>
+                <div class="dest"><img src="{% static 'images/torcida_brasil.jpg' %}" alt=""></div>
+            </div>
+
+            <div class="features">
+                
+                <div class="feat_dieta">
+                    <p>Dietas</p>
+                    <a href=""> <img src="{% static 'images/icons/icon_dieta.png' %}" alt=""></a>
+                </div>
+                
+                <div class="feat_treino">
+                    <p>Treinos</p>
+                    <a href=""> <img src="{% static 'images/icons/icon_exercicio.png' %}" alt=""></a>
+                </div>
+                
+                <div class="feat_grupo">
+                    <p>Grupos</p>
+                    <a href=""> <img src="{% static 'images/icons/icon_grupo.png' %}" alt=""></a>
+                </div>
+            </div>
+
+            <div class="forYou">
+
+                <!-- carrossel de perfis -->
+                <div class="perfis">
+                    <img class="fechar" src="{% static 'images/icons/icon_close.png' %}" alt="">
+                    <img src="{% static 'images/icons/icon_perfil.png' %}" alt="">
+                    <p>usuário</p>
+                    <button>Seguir</button>
+                </div>
+
+                <div class="perfis">
+                    <img class="fechar" src="{% static 'images/icons/icon_close.png' %}" alt="">
+                    <img src="{% static 'images/icons/icon_perfil.png' %}" alt="">
+                    <p>usuário</p>
+                    <button>Seguir</button>
+                </div>
+
+                <div class="perfis">
+                    <img class="fechar" src="{% static 'images/icons/icon_close.png' %}" alt="">
+                    <img src="{% static 'images/icons/icon_perfil.png' %}" alt="">
+                    <p>usuário</p>
+                    <button>Seguir</button>
+                </div>
+
+                <div class="perfis">
+                    <img class="fechar" src="{% static 'images/icons/icon_close.png' %}" alt="">
+                    <img src="{% static 'images/icons/icon_perfil.png' %}" alt="">
+                    <p>usuário</p>
+                    <button>Seguir</button>
+                </div>
+
+                <div class="perfis">
+                    <img class="fechar" src="{% static 'images/icons/icon_close.png' %}" alt="">
+                    <img src="{% static 'images/icons/icon_perfil.png' %}" alt="">
+                    <p>usuário</p>
+                    <button>Seguir</button>
+                </div>
+
+            </div>
+
+            <div class="publicacoes">
+
+                <div class="post">
+                    <!--post header-->
+                    <article class="post-info">
+                        <img class="foto-perfil" src="{% static 'images/icons/icon_perfil.png' %}" alt="foto perfil">
+                        <p>usuário</p>
+                    </article>
+                    
+                    <!--img post-->
+                    <img class="img-post" src="{% static 'images/post_exemplo.png' %}" alt="Imagem poste">
+
+                    <!--ícones Like-->
+                    <article class="icone-post">
+                        <img class="icons" src="{% static 'images/icons/icon_favorite.png' %}" alt="" title="Curtir">
+                        <img class="icons" src="{% static 'images/icons/icon_chat.png' %}" alt="" title="Comentar">
+                        <img class="icons" src="{% static 'images/icons/icon_reply.png' %}" alt="" title="Encaminhar">
+
+                        <!-- <i class="like" data-feather=""></i> -->
+                        <!--<img class="like" src="assets/icones/Heart-red.svg">     -->  
+                    </article>
+
+                    <!--caption post-->
+                    <p class="captions-post">
+                        <b>@usuário</b> de hoje tá pago!!!
+                    </p>
+                </div>
+
+                <div class="post">
+                    <!--post header-->
+                    <article class="post-info">
+                        <img class="foto-perfil" src="{% static 'images/icons/icon_perfil.png' %}" alt="foto perfil">
+                        <p>usuário</p>
+                    </article>
+                    
+                    <!--img post-->
+                    <img class="img-post" src="{% static 'images/post_exemplo.png' %}" alt="Imagem poste">
+
+                    <!--ícones Like-->
+                    <article class="icone-post">
+                        <img class="icons" src="{% static 'images/icons/icon_favorite.png' %}" alt="" title="Curtir">
+                        <img class="icons" src="{% static 'images/icons/icon_chat.png' %}" alt="" title="Comentar">
+                        <img class="icons" src="{% static 'images/icons/icon_reply.png' %}" alt="" title="Encaminhar">
+
+                        <!-- <i class="like" data-feather=""></i> -->
+                        <!--<img class="like" src="assets/icones/Heart-red.svg">     -->  
+                    </article>
+
+                    <!--caption post-->
+                    <p class="captions-post">
+                        <b>@usuário</b> de hoje tá pago!!!
+                    </p>
+                </div>
+
+                <div class="post">
+                    <!--post header-->
+                    <article class="post-info">
+                        <img class="foto-perfil" src="{% static 'images/icons/icon_perfil.png' %}" alt="foto perfil">
+                        <p>usuário</p>
+                    </article>
+                    
+                    <!--img post-->
+                    <img class="img-post" src="{% static 'images/post_exemplo.png' %}" alt="Imagem poste">
+
+                    <!--ícones Like-->
+                    <article class="icone-post">
+                        <img class="icons" src="{% static 'images/icons/icon_favorite.png' %}" alt="" title="Curtir">
+                        <img class="icons" src="{% static 'images/icons/icon_chat.png' %}" alt="" title="Comentar">
+                        <img class="icons" src="{% static 'images/icons/icon_reply.png' %}" alt="" title="Encaminhar">
+
+                        <!-- <i class="like" data-feather=""></i> -->
+                        <!--<img class="like" src="assets/icones/Heart-red.svg">     -->  
+                    </article>
+
+                    <!--caption post-->
+                    <p class="captions-post">
+                        <b>@usuário</b> de hoje tá pago!!!
+                    </p>
+                </div>
+
+
+                <div class="post">
+                    <!--post header-->
+                    <article class="post-info">
+                        <img class="foto-perfil" src="{% static 'images/icons/icon_perfil.png' %}" alt="foto perfil">
+                        <p>usuário</p>
+                    </article>
+                    
+                    <!--img post-->
+                    <img class="img-post" src="{% static 'images/post_exemplo.png' %}" alt="Imagem poste">
+
+                    <!--ícones Like-->
+                    <article class="icone-post">
+                        <img class="icons" src="{% static 'images/icons/icon_favorite.png' %}" alt="" title="Curtir">
+                        <img class="icons" src="{% static 'images/icons/icon_chat.png' %}" alt="" title="Comentar">
+                        <img class="icons" src="{% static 'images/icons/icon_reply.png' %}" alt="" title="Encaminhar">
+
+                        <!-- <i class="like" data-feather=""></i> -->
+                        <!--<img class="like" src="assets/icones/Heart-red.svg">     -->  
+                    </article>
+
+                    <!--caption post-->
+                    <p class="captions-post">
+                        <b>@usuário</b> de hoje tá pago!!!
+                    </p>
+                </div>
+
+                <div class="post">
+                    <!--post header-->
+                    <article class="post-info">
+                        <img class="foto-perfil" src="{% static 'images/icons/icon_perfil.png' %}" alt="foto perfil">
+                        <p>usuário</p>
+                    </article>
+                    
+                    <!--img post-->
+                    <img class="img-post" src="{% static 'images/post_exemplo.png' %}" alt="Imagem poste">
+
+                    <!--ícones Like-->
+                    <article class="icone-post">
+                        <img class="icons" src="{% static 'images/icons/icon_favorite.png' %}" alt="" title="Curtir">
+                        <img class="icons" src="{% static 'images/icons/icon_chat.png' %}" alt="" title="Comentar">
+                        <img class="icons" src="{% static 'images/icons/icon_reply.png' %}" alt="" title="Encaminhar">
+
+                        <!-- <i class="like" data-feather=""></i> -->
+                        <!--<img class="like" src="assets/icones/Heart-red.svg">     -->  
+                    </article>
+
+                    <!--caption post-->
+                    <p class="captions-post">
+                        <b>@usuário</b> de hoje tá pago!!!
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <nav>
+            <a href="index"><img src="{% static 'images/icons/icon_home.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/icons/icon_search.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/icons/icon_logo.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/icons/icon_chat.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/icons/icon_perfil.png' %}" alt=""></a>
+
+        </nav>
+        
+        <footer></footer>
+
+    </div>
+</body>
+</html>

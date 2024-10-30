@@ -1,0 +1,52 @@
+body {
+    /* Usando 100% em vez de valores fixos */
+    width: 100%;
+    height: 100%;
+
+    /* Centraliza o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Evita que a posição da tela se desconfigure */
+    position: relative;
+    overflow: hidden; /* Esconde conteúdo que ultrapasse o tamanho da tela */
+}
+
+/* Define o layout específico para iPhone XR (414px de largura) */
+@media (max-width: 414px) {
+    body {
+        width: 414px;
+        height: 896px; /* Altura fixa, mas você pode usar height: 100vh para permitir que varie com o viewport */
+    }
+
+    #content {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#1DD3B0, #B2FF9E);
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 25px;
+    }
+
+    /* Outras partes do layout mantêm o mesmo estilo */
+}
+
+/* Para telas menores que 414px */
+@media (max-width: 320px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    #content {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(#1DD3B0, #B2FF9E);
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+
+    /* Ajuste adicional para conteúdo */
+}
